@@ -4,11 +4,11 @@
  */
 
 module.exports = function getLoveTrianglesCount(preferences = []) {
-   var count = 0;
+   let count = 0;
    preferences.unshift(0);
-  for(var a = 1; a < preferences.length; a++){
-      var b = preferences[a];
-      var c = preferences[b];
+  for(let a = 1; a < preferences.length; a++){
+      let b = preferences[a];
+      let c = preferences[b];
       if(preferences[c] == a) {
         count ++;
       }                     
